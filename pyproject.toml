@@ -1,0 +1,22 @@
+[project]
+name = "prefect-testing"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Josh Neland",email = "joshneland@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "prefect (>=3.3.4,<4.0.0)",
+    "prefect-cloud (>=0.1.4,<0.2.0)",
+    "firecrawl-py (>=1.16.0,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
