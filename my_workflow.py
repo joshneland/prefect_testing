@@ -2,10 +2,10 @@ from prefect import flow, task
 import time
 
 @flow(log_prints=True)
-def my_workflow():
+def my_workflow(numruns: int):
     print("Kicking off workflow")
 
-    for i in range(10):
+    for i in range(numruns):
         print(f"Processing item {i}")
         process(i)
         time.sleep(1)
